@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مراجعة اللغة العربية – Arabic B Year 2</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;800&family=Amiri:wght@400;700&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#fff4cc;--bg2:#ffd9ec;--card:#fff;--tx:#2b2250;--mut:#6b6290;--chip:#fff3c4;--line:#ffd98a;--ok:#1fa35c;--no:#e5484d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#2a1d55;--bg2:#12304d;--card:#34296a;--tx:#fff4d6;--mut:#cfc6f5;--chip:#463b82;--line:#5a4c9c}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#2a1d55;--bg2:#12304d;--card:#34296a;--tx:#fff4d6;--mut:#cfc6f5;--chip:#463b82;--line:#5a4c9c}
+body{margin:0;min-height:100%;font-family:'Baloo Bhaijaan 2','Segoe UI',Tahoma,system-ui,sans-serif;background:linear-gradient(160deg,var(--bg),var(--bg2)) fixed;background-color:var(--bg);color:var(--tx);line-height:1.7}
+.wrap{max-width:780px;margin:auto;padding:14px}
+.top{text-align:center;background:var(--card);border:3px solid #ffb703;border-radius:28px;padding:16px;box-shadow:0 6px 0 #ffb703}
+.top .t{font-size:3rem;line-height:1}
+h1{margin:4px 0;font-size:clamp(24px,6vw,38px);background:linear-gradient(90deg,#ff6b6b,#ff9f1c,#2ec4b6,#8a5cf6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.en,.tr{direction:ltr;text-align:left}
+.sub{color:var(--mut)}
+.info{display:flex;flex-direction:column;gap:6px;margin-top:10px;text-align:start}
+.info div{display:flex;align-items:center;gap:10px;background:var(--chip);border-radius:16px;padding:6px 12px}
+.info span{flex:1}
+#bar{display:flex;gap:10px;justify-content:center;align-items:center;margin-top:10px;flex-wrap:wrap}
+#tot{font-weight:800;font-size:1.3rem;background:#ffd23f;color:#3b2a00;border-radius:20px;padding:2px 16px}
+#warn{background:#ffe8b3;color:#5a3b00;border-radius:16px;padding:8px 14px;margin-top:10px;font-size:.95rem}
+.card{background:var(--card);border:3px solid var(--c);border-radius:26px;margin:18px 0;overflow:hidden}
+.hd{background:var(--c);color:#fff;display:flex;gap:10px;align-items:center;padding:12px 16px}
+.hd .ic{font-size:2rem}.hd .ar{font-weight:800;font-size:1.1rem}.hd .en{font-size:.9rem}.hd>div{flex:1}
+.bd{padding:4px 14px}
+h4{margin:14px 0 2px;color:var(--c);border-bottom:3px dotted var(--c);font-size:1.05rem}
+.it{padding:10px 6px;border-bottom:2px dashed var(--line)}
+.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.em{font-size:2.3rem}
+.q,.o,.in{font-family:Amiri,'Noto Naskh Arabic',serif}
+.q{font-size:1.8rem;font-weight:700}
+.tr{display:block;color:var(--mut);font-size:.9rem}
+.bl{display:inline-block;min-width:2.2em;text-align:center;border-bottom:4px dashed var(--c);color:var(--c);padding:0 6px}
+.bl.ok{color:var(--ok);border-color:var(--ok)}.bl.fix{color:#d97500;border-color:#d97500}.bl.no{color:var(--no);border-color:var(--no)}
+.ch{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.o{font-size:1.35rem;border:3px solid var(--c);background:var(--chip);color:var(--tx);border-radius:16px;padding:0 14px;cursor:pointer}
+.o.on{background:var(--c);color:#fff}.o.ok{background:var(--ok);border-color:var(--ok);color:#fff}.o.no{background:var(--no);border-color:var(--no);color:#fff}.o:disabled{cursor:default}
+.in{font-size:1.35rem;width:min(100%,420px);border:3px solid var(--c);border-radius:14px;padding:2px 10px;background:var(--chip);color:var(--tx);margin-top:6px}
+.sp{border:0;background:#ffd23f;border-radius:50%;width:38px;height:38px;font-size:1.1rem;cursor:pointer;flex:none}
+.fb{display:none;margin-top:6px;padding:4px 12px;border-radius:14px;font-size:1.15rem;background:#e8e0ff;color:#3b2a85}
+.fb.show{display:block}.fb.ok{background:#d6f5e3;color:#0b5d33}.fb.no{background:#ffe0e0;color:#8a1c1c}
+.fb small{direction:ltr;display:inline-block}
+.ft{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:12px 16px;background:var(--chip)}
+.bt{font:inherit;font-weight:800;border:0;border-radius:18px;padding:4px 18px;background:var(--c);color:#fff;cursor:pointer;box-shadow:0 4px 0 rgba(0,0,0,.2)}.bt.g{background:#8b90ad}
+.sc{font-weight:800;font-size:1.2rem}
+summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:none}
+.dg{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:8px 0}
+.dc{font:inherit;background:var(--chip);color:var(--tx);border:3px solid var(--c);border-radius:18px;padding:6px 10px;text-align:center;cursor:pointer;display:block}
+.dc.wide{grid-column:1/-1}.dc[hidden]{display:none}
+.dw{display:block;font-family:Amiri,'Noto Naskh Arabic',serif;font-size:1.6rem;font-weight:700;line-height:1.5}
+.de{display:block;font-size:2.4rem;line-height:1.3}
+.dc small{display:block;color:var(--mut)}
+#dq{font:inherit;width:100%;box-sizing:border-box;border:3px solid var(--c);border-radius:14px;padding:4px 12px;background:var(--chip);color:var(--tx);margin:10px 0}
+.cf{position:fixed;top:-40px;z-index:99;pointer-events:none;animation:fall 2.6s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+ <div class="t">👩‍🏫🦉🎈</div>
+ <h1>مُرَاجَعَةُ اللُّغَةِ العَرَبِيَّةِ</h1>
+ <div class="en sub" style="text-align:center">Arabic B · Year 2 · Term 1 Revision · 2026–2027</div>
+ <div class="info" id="info"></div>
+ <div id="bar"><span id="tot">⭐ 0</span><button class="sp" id="lg" style="width:auto;border-radius:20px;padding:0 14px;font:inherit;font-weight:800">🗣️ عربي فقط</button><button class="sp" id="spd" style="width:auto;border-radius:20px;padding:0 14px;font:inherit;font-weight:800">🐢 بطيء · Slow</button><button class="sp" id="stop" title="Stop">⏹</button></div>
+</header>
+<details class="card" id="dict" style="--c:#7b2cbf"></details>
+<main id="main"></main>
+</div>
+<script>
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s),B='▢';
+const SH={i:l=>l+'ـ',m:l=>'ـ'+l+'ـ',f:l=>'ـ'+l,s:l=>l};
+const sh=a=>a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(v=>v[1]);
+const nm=s=>s.replace(/[\u064B-\u0652\u0670\u0640\s\/+\-.,،؟!]/g,'').replace(/[أإآٱ]/g,'ا');
+// letter shapes
+const L=(h,l,ts,r)=>r.map(([b,a,t,f,e],k)=>({h:k?'':h,q:b+B+a,opts:sh([...ts].map(x=>SH[x](l))),ans:SH[t](l),full:f,en:e,pre:[f,'']}));
+// picture-to-word matching
+const M=(h,r)=>{const w=r.map(x=>x[1]);return r.map(([e,wd,en],k)=>({h:k?'':h,em:e,q:B,opts:sh(w),ans:wd,full:wd,en,sayo:1}))};
+const S=[
+{c:'#ff6b6b',ic:'🔤',ar:'أَوَّلًا: الفَهْمُ المَقْرُوءُ — اِخْتَرْ شَكْلَ الحَرْفِ المُنَاسِبَ لِلْفَرَاغِ.',en:'Part 1: Reading — Choose the appropriate letter shape for the blank.',it:[
+...L('الزَّايُ ( ز ) · Zaay','ز','fs',[['مَنْ','لٌ','f','مَنْزِلٌ','house'],['كَرَ','','s','كَرَزٌ','cherry'],['','رَافَةٌ','s','زَرَافَةٌ','giraffe']]),
+...L('الحَاءُ ( ح ) · Haa','ح','imfs',[['قَمْ','','f','قَمْحٌ','wheat'],['','صَانٌ','i','حِصَانٌ','horse'],['بَ','رٌ','m','بَحْرٌ','sea']]),
+...L('البَاءُ ( ب ) · Baa','ب','imfs',[['خُ','زٌ','m','خُبْزٌ','bread'],['','طَّةٌ','i','بَطَّةٌ','duck'],['كَلْ','','f','كَلْبٌ','dog']]),
+...L('الدَّالُ ( د ) · Daal','د','fs',[['مَ','رَسَةٌ','f','مَدْرَسَةٌ','school'],['يَ','','f','يَدٌ','hand'],['','يكٌ','s','دِيكٌ','rooster']]),
+...L('الثَّاءُ ( ث ) · Thaa','ث','imfs',[['كُمَّ','رَى','m','كُمَّثْرَى','pear'],['مُثَلَّ','','f','مُثَلَّثٌ','triangle'],['','عْلَبٌ','i','ثَعْلَبٌ','fox']]),
+...L('التَّاءُ ( ت ) · Taa','ت','imfs',[['تُو','','s','تُوتٌ','berries'],['كِ','ابٌ','m','كِتَابٌ','book'],['','مْرٌ','i','تَمْرٌ','dates']]),
+...L('الرَّاءُ ( ر ) · Raa','ر','fs',[['فَ','اشَةٌ','f','فَرَاشَةٌ','butterfly'],['','مْلٌ','s','رَمْلٌ','sand'],['قِطَا','','f','قِطَارٌ','train']]),
+...L('الخَاءُ ( خ ) · Khaa','خ','imfs',[['بِطِّي','','f','بِطِّيخٌ','watermelon'],['نَ','لَةٌ','m','نَخْلَةٌ','palm tree'],['','رُوفٌ','i','خَرُوفٌ','sheep']]),
+...L('الجِيمُ ( ج ) · Jeem','ج','imfs',[['ثَلْ','','f','ثَلْجٌ','snow'],['نَ','مٌ','m','نَجْمٌ','star'],['','دِّي','i','جَدِّي','my grandfather']])]},
+{c:'#ff9f1c',ic:'🖼️',ar:'صِلِ الصُّورَةَ بِالكَلِمَةِ الَّتِي تَحْتَوِي عَلَى الحَرْفِ المَذْكُورِ.',en:'Match each picture with the word that contains the given letter.',it:[
+...M('حَرْفُ الذَّالِ ( ذ ) · Dhaal',[['👂','أُذُنٌ','ear'],['🧑‍🎓','تِلْمِيذٌ','student'],['🌽','ذُرَةٌ','corn']]),
+...M('حَرْفُ البَاءِ ( ب ) · Baa',[['🚪','بَابٌ','door'],['🐄','بَقَرَةٌ','cow'],['🦆','بَطَّةٌ','duck'],['👧','بِنْتٌ','girl']]),
+...M('حَرْفُ الأَلِفِ ( أ ) · Alif',[['🐭','فَأْرٌ','mouse'],['🫖','إِبْرِيقٌ','jug'],['🐰','أَرْنَبٌ','rabbit'],['🦁','أَسَدٌ','lion']])]},
+{c:'#2ec4b6',ic:'👨‍👩‍👧',ar:'ثَانِيًا: الأَسَالِيبُ وَالتَّرَاكِيبُ — اِخْتَرِ الإِجَابَةَ الصَّحِيحَةَ (هَذَا – هَذِهِ).',en:'Part 2: Grammar and Structures — Choose the correct answer (this – this).',
+it:[['👨','أَبِي','هَذَا','This is my father.'],['👩','أُمِّي','هَذِهِ','This is my mother.'],['👦','أَخِي','هَذَا','This is my brother.'],['👧','أُخْتِي','هَذِهِ','This is my sister.'],['👴','جَدِّي','هَذَا','This is my grandfather.'],['👵','جَدَّتِي','هَذِهِ','This is my grandmother.'],['🧒','وَلَدٌ','هَذَا','This is a boy.'],['🦁','أَسَدٌ','هَذَا','This is a lion.'],['👧','بِنْتٌ','هَذِهِ','This is a girl.'],['🐝','نَحْلَةٌ','هَذِهِ','This is a bee.']].map(([e,w,a,en])=>({em:e,q:B+' '+w,opts:['هَذَا','هَذِهِ'],ans:a,full:a+' '+w,en,pre:[w,''],sayo:1}))},
+{c:'#8a5cf6',ic:'🗂️',ar:'صَنِّفِ الكَلِمَاتِ الآتِيَةَ حَسَبَ الحَرْفِ الأَوَّلِ.',en:'Classify the following words by their first letter.',
+it:[['🐋','حُوتٌ','ح','whale'],['🐰','أَرْنَبٌ','أ','rabbit'],['🍎','تُفَّاحٌ','ت','apple'],['🐄','بَقَرَةٌ','ب','cow'],['🐪','جَمَلٌ','ج','camel'],['🐑','خَرُوفٌ','خ','sheep']].map(([e,w,l,en])=>({em:e,q:w+' ← '+B,opts:['أ','ب','ت','ج','ح','خ'],ans:l,full:w+' ← '+l,en,pre:[w,en]}))},
+{c:'#ef5da8',ic:'🧩',ar:'حَلِّلِ الكَلِمَاتِ إِلَى حُرُوفِهَا (اُكْتُبِ الحُرُوفَ وَبَيْنَهَا /).',en:'Break each word into its letters (write the letters separated by /).',
+it:[['أَبٌ','أ / ب','father'],['أُمٌّ','أ / م','mother'],['بَابٌ','ب / ا / ب','door'],['قَلَمٌ','ق / ل / م','pen'],['وَلَدٌ','و / ل / د','boy'],['بَطَّةٌ','ب / ط / ة','duck'],['لَعِبَ','ل / ع / ب','played'],['كَتَبَ','ك / ت / ب','wrote'],['سَمَكَةٌ','س / م / ك / ة','fish'],['مَدْرَسَةٌ','م / د / ر / س / ة','school']].map(([w,a,en])=>({q:w,inp:1,ph:'ب / ا / ب',ans:a,full:w+' = '+a,en,pre:[w,en]}))},
+{c:'#3a86ff',ic:'💬',ar:'عَبِّرْ عَنِ الصُّوَرِ بِجُمْلَةٍ بَسِيطَةٍ مُسْتَخْدِمًا الكَلِمَاتِ المُسَاعِدَةَ.',en:'Express the pictures in a simple sentence using the helping words.',it:[
+...[['👨','هَذَا أَبِي.','This is my father.'],['👩','هَذِهِ أُمِّي.','This is my mother.'],['🧒','هَذَا أَخِي.','This is my brother.'],['👧','هَذِهِ أُخْتِي.','This is my sister.']].map(([e,a,en],k)=>({h:k?'':'( هَذَا – هَذِهِ – أَبِي – أُمِّي – أَخِي – أُخْتِي )<br><span class="en">(This – This – my father – my mother – my brother – my sister)</span>',em:e,q:'',inp:1,open:1,ans:a,full:a,en})),
+...[['❤️👩','أَنَا أُحِبُّ أُمِّي.','I love my mother.'],['❤️👴','أَنَا أُحِبُّ جَدِّي.','I love my grandfather.'],['👀🐰','أَنَا أَرَى الأَرْنَبَ.','I see the rabbit.'],['👀🐑','أَنَا أَرَى الخَرُوفَ.','I see the sheep.'],['👀🐶','أَنَا أَرَى الكَلْبَ.','I see the dog.'],['❤️👨','أَنَا أُحِبُّ أَبِي.','I love my father.']].map(([e,a,en],k)=>({h:k?'':'( أَنَا أُحِبُّ – أَنَا أَرَى – أَخِي – أُخْتِي – أُمِّي – أَبِي – جَدِّي – الأَرْنَبُ – الخَرُوفُ – الكَلْبُ )<br><span class="en">(I like – I see – my brother – my sister – my mother – my father – my grandfather – the rabbit – the sheep – the dog)</span>',em:e,q:'',inp:1,open:1,ans:a,full:a,en}))]},
+{c:'#06b36b',ic:'👂',ar:'ثَالِثًا: الإِمْلَاءُ — اِسْتَمِعْ ثُمَّ ضَعْ دَائِرَةً حَوْلَ الكَلِمَةِ الصَّحِيحَةِ.',en:'Part 3: Dictation — Listen, then circle the correct word.',
+it:[['👴','جَدِّي','دَجِّي','يَجْدِ','grandfather'],['🐋','حُوتٌ','تُوحٌ','حَتُوٌ','whale'],['🧒','أَخِي','أَيْخ','يَأْخ','brother'],['👨','عَمِّي','مِيعَ','يَعْمَ','uncle'],['👩','أُمِّي','مَأْي','يَأْم','mother'],['👂','أُذُنٌ','ذَأْنٌ','نَأْذٌ','ear']].map(([e,a,x,y,en])=>({em:e,q:B,opts:sh([a,x,y]),ans:a,full:a,en,pre:[a,''],sayo:1}))},
+{c:'#f4a100',ic:'✍️',ar:'رَابِعًا: الخَطُّ — اُكْتُبْ بِخَطِّ النَّسْخِ.',en:'Part 4: Handwriting — Write in Naskh script.',
+it:[['أَنَا أُحِبُّ أُمِّي.','I love my mother.'],['أَنَا أُحِبُّ أَبِي.','I love my father.'],['هَذَا أَخِي.','This is my brother.'],['هَذِهِ أُخْتِي.','This is my sister.'],['أَنَا أُحِبُّ جَدِّي.','I love my grandfather.']].map(([a,en])=>({q:a,inp:1,ph:'اُنْقُلِ الجُمْلَةَ · Copy the sentence',ans:a,full:a,en,pre:[a,en]}))}
+];
+const T=S.reduce((a,s)=>a+s.it.filter(x=>!x.open).length,0);
+// teacher voice
+const SP=[];
+const sp=(a,e)=>`<button class="sp" data-s="${SP.push([a,e])-1}" title="🔊">🔊</button>`;
+let K=.7,AR=1;
+function say(ar,en){const ss=window.speechSynthesis;if(!ss)return;ss.cancel();setTimeout(()=>{[[ar,'ar'],[AR?'':en,'en']].forEach(([t,l])=>{if(!t)return;const u=new SpeechSynthesisUtterance(t),v=ss.getVoices().filter(x=>x.lang.toLowerCase().replace('_','-').startsWith(l)),f=v.find(x=>/ar.EG/i.test(x.lang))||v.find(x=>/female|hoda|laila|salma|zira|samantha|karen|moira|aria|susan|sara|zariyah|google/i.test(x.name))||v[0];if(f)u.voice=f;u.lang=f?f.lang:(l=='ar'?'ar-SA':'en-US');u.rate=(l=='ar'?.8:.88)*K;u.pitch=1.15;ss.speak(u)})},60)}
+function chkv(){}
+if(window.speechSynthesis){speechSynthesis.onvoiceschanged=chkv;chkv()}
+// rendering
+const item=(x,k)=>(x.h?`<h4>${x.h}</h4>`:'')+`<div class="it" data-k="${k}"><div class="row">${x.em?`<span class="em">${x.em}</span>`:''}<span class="q">${x.q.replace(B,'<b class="bl">▢</b>')}</span>${x.pre?sp(...x.pre):''}</div>`+(x.en&&!x.open?`<small class="tr">${x.en}</small>`:'')+(x.opts?`<div class="ch">${x.opts.map(o=>`<button class="o"${x.sayo?' data-sy="1"':''}>${o}</button>`).join('')}</div>`:`<input class="in" dir="rtl" autocomplete="off" placeholder="${x.ph||'اكتب هنا · Write here'}">`)+'<div class="fb"></div></div>';
+function upd(){$('#tot').textContent='⭐ '+S.reduce((a,s)=>a+(s.n||0),0)+' / '+T}
+function draw(i){const s=S[i];s.n=0;$('#s'+i).innerHTML=`<div class="hd"><span class="ic">${s.ic}</span><div><div class="ar">${s.ar}</div><div class="en">${s.en}</div></div>${sp(s.ar,s.en)}</div><div class="bd">${s.it.map(item).join('')}</div><div class="ft"><button class="bt" data-a="chk">✅ أَظْهِرِ الإِجَابَاتِ · Show answers</button><button class="bt g" data-a="rs">🔄 مِنَ البِدَايَةِ · Try again</button><span class="sc"></span></div>`;upd()}
+function boom(){for(let i=0;i<30;i++){const e=document.createElement('i');e.textContent=['🎉','⭐','🎈','✨','🌟'][i%5];e.className='cf';e.style.cssText=`left:${Math.random()*100}vw;animation-delay:${Math.random()*.6}s;font-size:${18+Math.random()*18}px`;document.body.appendChild(e);setTimeout(()=>e.remove(),3300)}}
+function chk(i){const s=S[i];let n=0,t=0;
+$$('#s'+i+' .it').forEach(el=>{const x=s.it[el.dataset.k];let ok=null;
+if(x.opts){const on=el.querySelector('.o.on');t++;ok=!!on&&on.textContent==x.ans;el.querySelectorAll('.o').forEach(b=>{b.disabled=true;if(b.textContent==x.ans)b.classList.add('ok')});if(on&&!ok)on.classList.add('no');const bl=el.querySelector('.bl');if(bl){bl.textContent=x.ans;bl.className='bl '+(ok?'ok':'fix')}}
+else{const p=el.querySelector('.in');p.disabled=true;if(!x.open){t++;ok=nm(p.value)==nm(x.ans)}}
+if(ok)n++;const fb=el.querySelector('.fb');fb.innerHTML=(ok===null?'✏️ ':ok?'✅ ':'💡 ')+`<b>${x.full}</b> ${x.en?`<small>${x.en}</small>`:''} `+sp(x.full,x.en);fb.className='fb show '+(ok===null?'':ok?'ok':'no')});
+s.n=n;const sc=$('#s'+i+' .sc');sc.textContent=t?`⭐ ${n} / ${t}`:'✏️ قَارِنْ إِجَابَتَكَ · Compare your answers';upd();
+if(!t)say('قَارِنْ إِجَابَاتِكَ بِالنَّمُوذَجِ.','Compare your answers with the model.');
+else if(n==t){boom();say('مُمْتَازٌ! أَحْسَنْتَ!','Excellent! Great job!')}
+else say(n>=t/2?'جَيِّدٌ! حَاوِلْ مَرَّةً أُخْرَى.':'لَا بَأْسَ، لِنُعِدِ المُحَاوَلَةَ!',n>=t/2?'Good! Try again.':'No worries, let’s try again!')}
+S.forEach((s,i)=>{const e=document.createElement('section');e.className='card';e.id='s'+i;e.style.setProperty('--c',s.c);$('#main').appendChild(e);draw(i)});
+$('#info').innerHTML=[['🔤','الحُرُوفُ: أ – ب – ت – ث – ج – ح – خ – د – ذ – ر – ز','Arabic letters: Alif, Baa, Taa, Thaa, Jeem, Haa, Khaa, Daal, Dhaal, Raa, Zaay','أَلِفْ، بَاءْ، تَاءْ، ثَاءْ، جِيمْ، حَاءْ، خَاءْ، دَالْ، ذَالْ، رَاءْ، زَايْ'],['📖','الدَّرْسَانِ: أُسْرَتِي – فِي المَزْرَعَةِ','Lessons: My Family – On the farm','الدَّرْسَانِ: أُسْرَتِي، وَفِي المَزْرَعَةِ'],['✏️','القَوَاعِدُ: هَذَا / هَذِهِ – أَنَا أُحِبُّ – أَنَا أَرَى','Grammar and structures: This – I like – I see','القَوَاعِدُ: هَذَا، هَذِهِ، أَنَا أُحِبُّ، أَنَا أَرَى']].map(([e,a,en,say])=>`<div><b>${e}</b><span>${a}<br><span class="en">${en}</span></span>${sp(say,en)}</div>`).join('');
+// audio dictionary
+const DI=[
+['🔤','الحُرُوفُ · Letters',[['أ · أَرْنَبٌ','Alif · rabbit','أَلِفٌ، أَرْنَبٌ'],['ب · بَطَّةٌ','Baa · duck','بَاءٌ، بَطَّةٌ'],['ت · تُفَّاحٌ','Taa · apple','تَاءٌ، تُفَّاحٌ'],['ث · ثَعْلَبٌ','Thaa · fox','ثَاءٌ، ثَعْلَبٌ'],['ج · جَمَلٌ','Jeem · camel','جِيمٌ، جَمَلٌ'],['ح · حُوتٌ','Haa · whale','حَاءٌ، حُوتٌ'],['خ · خَرُوفٌ','Khaa · sheep','خَاءٌ، خَرُوفٌ'],['د · دِيكٌ','Daal · rooster','دَالٌ، دِيكٌ'],['ذ · ذُرَةٌ','Dhaal · corn','ذَالٌ، ذُرَةٌ'],['ر · رَمْلٌ','Raa · sand','رَاءٌ، رَمْلٌ'],['ز · زَرَافَةٌ','Zaay · giraffe','زَايٌ، زَرَافَةٌ']]],
+['👨‍👩‍👧','أُسْرَتِي · My Family',[['أُسْرَةٌ','family'],['أَبٌ','father'],['أُمٌّ','mother'],['أَخٌ','brother'],['أُخْتٌ','sister'],['جَدٌّ','grandfather'],['جَدَّةٌ','grandmother'],['عَمٌّ','uncle'],['وَلَدٌ','boy'],['بِنْتٌ','girl'],['تِلْمِيذٌ','student']]],
+['🐄','فِي المَزْرَعَةِ · On the Farm',[['مَزْرَعَةٌ','farm'],['بَقَرَةٌ','cow'],['خَرُوفٌ','sheep'],['بَطَّةٌ','duck'],['دِيكٌ','rooster'],['أَرْنَبٌ','rabbit'],['كَلْبٌ','dog'],['حِصَانٌ','horse'],['نَحْلَةٌ','bee'],['فَأْرٌ','mouse'],['أَسَدٌ','lion'],['زَرَافَةٌ','giraffe'],['ثَعْلَبٌ','fox'],['جَمَلٌ','camel'],['حُوتٌ','whale'],['سَمَكَةٌ','fish'],['فَرَاشَةٌ','butterfly'],['نَخْلَةٌ','palm tree'],['ذُرَةٌ','corn'],['تُفَّاحٌ','apple'],['بِطِّيخٌ','watermelon'],['كُمَّثْرَى','pear'],['تَمْرٌ','dates'],['خُبْزٌ','bread']]],
+['🎒','أَشْيَاءُ وَأَفْعَالٌ · Things & Verbs',[['بَابٌ','door'],['قَلَمٌ','pen'],['كِتَابٌ','book'],['مَدْرَسَةٌ','school'],['مَنْزِلٌ','house'],['أُذُنٌ','ear'],['يَدٌ','hand'],['بَحْرٌ','sea'],['رَمْلٌ','sand'],['ثَلْجٌ','snow'],['نَجْمٌ','star'],['قِطَارٌ','train'],['مُثَلَّثٌ','triangle'],['إِبْرِيقٌ','jug'],['لَعِبَ','played'],['كَتَبَ','wrote']]],
+['💬','الأَسَالِيبُ وَالتَّرَاكِيبُ · Structures',[['هَذَا — لِلْمُذَكَّرِ','هَذَا = this (masculine)','هَذَا لِلْمُذَكَّرِ'],['هَذِهِ — لِلْمُؤَنَّثِ','هَذِهِ = this (feminine)','هَذِهِ لِلْمُؤَنَّثِ'],['أَنَا أُحِبُّ','I like / I love'],['أَنَا أَرَى','I see'],['هَذَا أَبِي.','This is my father.'],['هَذَا أَخِي.','This is my brother.'],['هَذَا جَدِّي.','This is my grandfather.'],['هَذَا وَلَدٌ.','This is a boy.'],['هَذَا أَسَدٌ.','This is a lion.'],['هَذِهِ أُمِّي.','This is my mother.'],['هَذِهِ أُخْتِي.','This is my sister.'],['هَذِهِ جَدَّتِي.','This is my grandmother.'],['هَذِهِ بِنْتٌ.','This is a girl.'],['هَذِهِ نَحْلَةٌ.','This is a bee.'],['أَنَا أُحِبُّ أُمِّي.','I love my mother.'],['أَنَا أُحِبُّ أَبِي.','I love my father.'],['أَنَا أُحِبُّ جَدِّي.','I love my grandfather.'],['أَنَا أَرَى الأَرْنَبَ.','I see the rabbit.'],['أَنَا أَرَى الخَرُوفَ.','I see the sheep.'],['أَنَا أَرَى الكَلْبَ.','I see the dog.']],1]
+];
+const E={ارنب:'🐰',بطة:'🦆',تفاح:'🍎',ثعلب:'🦊',جمل:'🐪',حوت:'🐋',خروف:'🐑',ديك:'🐓',ذرة:'🌽',رمل:'🏖️',زرافة:'🦒',اسرة:'👨‍👩‍👧‍👦',اب:'👨',ام:'👩',اخ:'👦',اخت:'👧',جد:'👴',جدة:'👵',عم:'👨‍🦱',ولد:'🧒',بنت:'👧',تلميذ:'🧑‍🎓',مزرعة:'🚜',بقرة:'🐄',كلب:'🐶',حصان:'🐴',نحلة:'🐝',فار:'🐭',اسد:'🦁',سمكة:'🐟',فراشة:'🦋',نخلة:'🌴',ذرة:'🌽',بطيخ:'🍉',كمثرى:'🍐',تمر:'🌴',خبز:'🍞',باب:'🚪',قلم:'✏️',كتاب:'📘',مدرسة:'🏫',منزل:'🏠',اذن:'👂',يد:'✋',بحر:'🌊',ثلج:'❄️',نجم:'⭐',قطار:'🚆',مثلث:'🔺',ابريق:'🫖',لعب:'⚽',كتب:'✍️'},em=w=>E[nm(w.split(' · ').pop())]||'';
+$('#dict').innerHTML=`<summary class="hd"><span class="ic">📚</span><div><div class="ar">القَامُوسُ السَّمْعِيُّ — اِضْغَطْ لِلْفَتْحِ وَاسْمَعِ الكَلِمَاتِ</div><div class="en">Audio Dictionary — tap to open, then tap any word to hear it</div></div></summary><div class="bd"><input id="dq" placeholder="🔍 ابْحَثْ · Search (عربي / English)" autocomplete="off">`+DI.map(([ic,h,ws,wide])=>`<h4>${ic} ${h}</h4><button class="bt" data-s="${SP.push([ws.map(w=>w[2]||w[0]).join('. '),''])-1}">🔊 اِقْرَأِ الكُلَّ · Read all</button><div class="dg">`+ws.map(([w,en,s])=>`<button class="dc${wide?' wide':''}" data-s="${SP.push([s||w,en])-1}">${em(w)?`<span class="de">${em(w)}</span>`:''}<span class="dw">${w}</span><small class="en">${en}</small></button>`).join('')+'</div>').join('')+'</div>';
+document.addEventListener('input',e=>{if(e.target.id!='dq')return;const q=nm(e.target.value).toLowerCase();$$('#dict .dc').forEach(c=>c.hidden=!!q&&!nm(c.textContent).toLowerCase().includes(q))});
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+if(b.id=='lg'){AR=!AR;b.textContent=AR?'🗣️ عربي فقط':'🗣️ عربي + English';say('أَهْلًا بِكُمْ فِي حصة اللُّغَة العَرَبِيَّة','Welcome to Arabic class');return}
+if(b.id=='spd'){K=K<1?1:.7;b.textContent=K<1?'🐢 بطيء · Slow':'🐇 عادي · Normal';say('أَهْلًا وَسَهْلًا','Hello');return}
+if(b.id=='stop'){speechSynthesis.cancel();return}
+if(b.dataset.s!=null){say(...SP[b.dataset.s]);return}
+if(b.classList.contains('o')){if(b.disabled)return;const it=b.closest('.it'),x=S[+b.closest('.card').id.slice(1)].it[it.dataset.k],fb=it.querySelector('.fb');it.querySelectorAll('.o').forEach(o=>o.classList.remove('on','no'));b.classList.add('on');const bl=it.querySelector('.bl');if(bl)bl.textContent=b.textContent;if(b.dataset.sy)say(b.textContent,'');
+if(b.textContent==x.ans){b.classList.add('ok');it.querySelectorAll('.o').forEach(o=>o.disabled=true);if(bl)bl.className='bl ok';fb.className='fb show ok';fb.innerHTML='✅ صَحِيحٌ! · Correct!';if(!b.dataset.sy)say('صَحِيحٌ!','Correct!')}
+else{b.classList.add('no');if(bl)bl.className='bl no';fb.className='fb show no';fb.innerHTML='❌ خَطَأٌ، حَاوِلْ مَرَّةً ثَانِيَةً · Wrong, try again';if(!b.dataset.sy)say('حَاوِلْ مَرَّةً ثَانِيَةً','Try again')}return}
+const a=b.dataset.a;if(a){const i=+b.closest('.card').id.slice(1);a=='chk'?chk(i):draw(i)}});
+document.addEventListener('change',e=>{const p=e.target;if(!p.classList.contains('in')||p.disabled||!p.value.trim())return;const it=p.closest('.it'),x=S[+p.closest('.card').id.slice(1)].it[it.dataset.k];if(x.open)return;const fb=it.querySelector('.fb');if(nm(p.value)==nm(x.ans)){fb.className='fb show ok';fb.innerHTML='✅ صَحِيحٌ! · Correct!';say('صَحِيحٌ!','Correct!')}else{fb.className='fb show no';fb.innerHTML='❌ خَطَأٌ، حَاوِلْ مَرَّةً ثَانِيَةً · Wrong, try again';say('حَاوِلْ مَرَّةً ثَانِيَةً','Try again')}});
+</script>
+</body>
+</html>
